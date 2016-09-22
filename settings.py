@@ -8,4 +8,4 @@ class Settings():
 		self.bullet_speed = 1
 		self.bullet_width = 3
 		self.bullet_height = 10
-		self.bullet_color = 90, 90, 90
+		self.bullet_color = 56, 56, 56
