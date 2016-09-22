@@ -22,7 +22,7 @@ def check_events(hero):
 				hero.moving_right == False 
 			elif event.key == pygame.K_LEFT:
 				hero.moving_left == False
-def update_screen(settings, screen, hero):
+def update_screen(game_settings, screen, hero):
 	screen.fill(settings.bg_color)
 	hero.draw_me() #call the draw method imported from Hero class
 	pygame.display.flip()
