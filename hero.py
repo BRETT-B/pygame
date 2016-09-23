@@ -11,7 +11,7 @@ class Hero(object):
 
 		self.rect.centerx = self.screen_rect.centerx #this will put the middle of the hero in the middle of our screen
 		self.rect.bottom = self.screen_rect.bottom #this will put our hero "bottom" at the bottom of the screen
-
+		
 		self.moving_right = False #set up movement booleans
 		self.moving_left = False
 		self.moving_up = False
@@ -23,9 +23,9 @@ class Hero(object):
 			self.rect.centerx += 10 #move the hero to the right
 		elif self.moving_left and self.rect.left > self.screen_rect.left:
 			self.rect.centerx -= 10 #move the hero to the left
-		elif self.moving_up and self.rect.up < self.screen_rect.up:
+		elif self.moving_up and self.rect.top > self.screen_rect.top:
 			self.rect.centery -= 10 #move the hero up
-		elif self.moving_down and self.rect.down > self.screen_rect.down:
+		elif self.moving_down and self.rect.bottom < self.screen_rect.bottom:
 			self.rect.centery += 10 #move the hero down	
 
 	def draw_me(self):
